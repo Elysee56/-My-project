@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>美颜相机</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-1.11.1.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script>
+		$(function(){
+            var time;
+            var n=0;
+			time=setInterval(function(){
+				n++;
+				if(n>3){n=0}
+					$('.photo').children('img').eq(n).css('display', 'block').siblings('img').css('display', 'none');
+			},2500)
+
+			$('.menu').eq(0).hover(function(){
+				$('.arrow').eq(0).css('transform', 'rotate(180deg)');
+				$('.dropdown').eq(0).css('display', 'block');
+			},function(){
+				$('.arrow').eq(0).css('transform', 'rotate(0deg)');
+				$('.dropdown').eq(0).css('display', 'none');
+			});
+			$('.menu').eq(1).hover(function(){
+				$('.arrow').eq(1).css('transform', 'rotate(180deg)');
+				$('.dropdown').eq(1).css('display', 'block');
+			},function(){
+				$('.arrow').eq(1).css('transform', 'rotate(0deg)');
+				$('.dropdown').eq(1).css('display', 'none');
+			});
+			$('.menu').eq(3).hover(function(){
+				$('.arrow').eq(2).css('transform', 'rotate(180deg)');
+				$('.dropdown').eq(2).css('display', 'block');
+			},function(){
+				$('.arrow').eq(2).css('transform', 'rotate(0deg)');
+				$('.dropdown').eq(2).css('display', 'none');
+			});
+			$('.one').click(function(event){
+				$(this).addClass('color').parent('dl').siblings('dl').children('i').removeClass('color')
+				$('.onewrap dd').addClass('text').parent('dl').siblings('dl').children('dd').removeClass('text')
+				$('.right').find('i').removeClass('color')
+				$('.right').find('dd').removeClass('text')
+				$('.middle video').eq(0).addClass('show').siblings('video').removeClass('show')
+			});
+			$('.two').click(function(event){
+				$(this).addClass('color').parent('dl').siblings('dl').children('i').removeClass('color')
+				$('.twowrap dd').addClass('text').parent('dl').siblings('dl').children('dd').removeClass('text')
+				$('.right').find('i').removeClass('color')
+				$('.right').find('dd').removeClass('text')
+				$('.middle video').eq(1).addClass('show').siblings('video').removeClass('show')
+			})
+			$('.three').click(function(event){
+				$(this).addClass('color').parent('dl').siblings('dl').children('i').removeClass('color')
+				$('.threewrap dd').addClass('text').parent('dl').siblings('dl').children('dd').removeClass('text')
+				$('.right').find('i').removeClass('color')
+				$('.right').find('dd').removeClass('text')
+				$('.middle video').eq(2).addClass('show').siblings('video').removeClass('show')
+			})
+			$('.four').click(function(event){
+				$(this).addClass('color').parent('dl').siblings('dl').children('i').removeClass('color')
+				$('.fourwrap dd').addClass('text').parent('dl').siblings('dl').children('dd').removeClass('text')
+				$('.left').find('i').removeClass('color')
+				$('.left').find('dd').removeClass('text')
+				$('.middle video').eq(3).addClass('show').siblings('video').removeClass('show')
+			})
+			$('.five').click(function(event){
+				$(this).addClass('color').parent('dl').siblings('dl').children('i').removeClass('color')
+				$('.fivewrap dd').addClass('text').parent('dl').siblings('dl').children('dd').removeClass('text')
+				$('.left').find('i').removeClass('color')
+				$('.left').find('dd').removeClass('text')
+				$('.middle video').eq(4).addClass('show').siblings('video').removeClass('show')
+			})
+			$('.six').click(function(event){
+				$(this).addClass('color').parent('dl').siblings('dl').children('i').removeClass('color')
+				$('.sixwrap dd').addClass('text').parent('dl').siblings('dl').children('dd').removeClass('text')
+				$('.left').find('i').removeClass('color')
+				$('.left').find('dd').removeClass('text')
+				$('.middle video').eq(5).addClass('show').siblings('video').removeClass('show')
+			})
+			$('.botright').click(function(){
+            	$('html,body').animate({'scrollTop':0}, 500)
+            });
+            $('.deputynav li').eq(1).click(function(){
+            	var h=$('.banner').offset().top;
+            	$('html,body').animate({'scrollTop':h},500)
+            })
+            $('.deputynav li').eq(2).click(function(){
+            	var h=$('.content').offset().top;
+            	$('html,body').animate({'scrollTop':h},500)
+            })
+            $('.deputynav li').eq(3).click(function(){
+            	var h=$('.twocontent').offset().top;
+            	$('html,body').animate({'scrollTop':h},500)
+            })
+            $('.deputynav li').eq(4).click(function(){
+            	var h=$('.threecontent').offset().top;
+            	$('html,body').animate({'scrollTop':h},500)
+            })
+            $('.deputynav li').eq(5).click(function(){
+            	var h=$('.footerdownload').offset().top;
+            	$('html,body').animate({'scrollTop':h},500)
+            })
+
+            $('.banbtn a').eq(0).click(function(){
+            	var h=$('.twocontent').offset().top;
+            	$('html,body').animate({'scrollTop':h},500)
+            })
+            $('.banbtn a').eq(1).click(function(){
+            	var h=$('.footerdownload').offset().top;
+            	$('html,body').animate({'scrollTop':h},500)
+            })
+		})
+	</script>
+</head>
+<body> 
+	<div class="navbar">
+		<div class="navwrap">
+			<div class="navleft">
+				<a href="html/homepage.html" target="_blank"><i class="logo"></i></a>
+				<div class="menu">
+					<span>智能硬件</span>&nbsp;<i class="arrow"></i>
+					<div class="dropdown">
+						<a class="link"href="html/phone.html" target="_blank">美图智能手机</a>
+					</div>
+				</div>
+				<div class="menu">
+					<span>App</span>&nbsp;<i class="arrow"></i>
+					<div class="dropdown">
+						<a class="link" href="html/Meituxiuxiu.html" target="_blank">美图秀秀</a><br>
+					    <a class="link" href="index.html" target="_blank">美颜相机</a><br>
+                        <a class="link" href="html/homepage.html" target="_blank">了解更多</a>
+					</div>
+				</div>	
+				<div class="menu">
+			    	<a href="html/homepage.html" target="_blank"><span>企业网站</span></a>
+			    </div>
+			</div>
+			<div class="navright">
+				<div class="menu">
+					<span>简体中文</span>&nbsp;<i class="arrow"></i>
+					<div class="dropdown">
+						<a class="link" href="html/index-English.html">English</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="deputynav">
+		<div class="navwrap">
+			<ul>
+				<li><img src="images/meiyanlogo.png" alt="" width="150px"></li>
+				<li><a href="#">关于我们</a></li>
+				<li><a href="#">最新活动</a></li>
+				<li><a href="#">功能介绍</a></li>
+				<li><a href="#">用户评价</a></li>
+				<li class="download"><a href="#">立即下载</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="banner">
+		<div class="banimg">
+			<img src="images/cameralogo.png" alt="" width="540px">
+			<div class="banbtn">
+				<a href="##">了解更多</a>
+				<a href="##">立即下载</a>
+			</div>
+		</div>
+		<div class="photo">
+			<img src="images/meiyanbanner01.jpg" alt="">
+			<img src="images/meiyanbanner02.jpg" alt="">
+			<img src="images/meiyanbanner03.jpg" alt="">
+			<img src="images/meiyanbanner04.jpg" alt="">
+		</div>
+		<div class="banphoto"></div>
+	</div>
+	<div class="content">
+		<div class="navwrap">
+			<h4 class="h4">NEWS</h4>
+			<h5 class="h5">PICK UP</h5>
+			<div class="list">
+  				<div class="newlis">
+    				<i></i>
+      				<img src="images/pic01.jpg" alt="..." width="300px">
+      				<div class="caption">
+        				<h5>美颜相机动漫大头贴<br>超萌“赵小兔”引爆全网</h5>
+        				<p>2016年12月 活动</p>
+      				</div>
+				</div>
+				<div class="newlis">
+      				<img src="images/pic02.jpg" alt="..." width="300px">
+      				<div class="caption">
+        				<h5>万圣一起来捣蛋<br>看看你是“小天使”还是“小恶魔”</h5>
+        				<p>2016年12月 活动</p>
+      				</div>
+				</div>
+				<div class="newlis">
+    				<img src="images/pic03.jpg" alt="..." width="300px">
+      				<div class="caption">
+        				<h5>美颜相机动漫大头贴<br>蜜桃少女“星星眼”萌翻全场</h5>
+        				<p>2016年12月 活动</p>
+      				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="twocontent">
+		<div class="navwrap">
+			<h4 class="h4">FEATURES</h4>
+			<h5 class="h5">六大特点一次了解</h5>
+			<div class="phone">
+				<div class="left">
+					<dl class="onewrap">
+						<i class="one color"></i>
+						<dd class="text"><h5>一键美颜</h5></dd>
+						<dd class="text"><h6>自拍超完美的小秘密</h6></dd><dd class="text"><h6>一秒拥有好气色</h6></dd>
+					</dl>
+					<dl class="twowrap">
+						<i class="two"></i>
+						<dd><h5>动漫大头贴</h5></dd>
+						<dd><h6>自拍也卖萌</h6></dd><dd><h6>一键变身漫画主人公</h6></dd>
+					</dl>
+					<dl class="threewrap">
+						<i class="three"></i>
+						<dd><h5>视频美颜</h5></dd>
+						<dd><h6>首创视频美颜拍</h6></dd><dd><h6>视频也能美美的</h6></dd>
+					</dl>
+				</div>
+				<div class="middle">
+					<video src="images/01.webm" autoplay="autoplay" loop="loop" class="show"></video>
+					<video src="images/02.webm" autoplay="autoplay" loop="loop"></video>
+					<video src="images/03.webm" autoplay="autoplay" loop="loop"></video>
+					<video src="images/04.webm" autoplay="autoplay" loop="loop"></video>
+					<video src="images/05.webm" autoplay="autoplay" loop="loop"></video>
+					<video src="images/06.webm" autoplay="autoplay" loop="loop"></video>
+				</div>
+				<div class="right">
+					<dl class="fourwrap">
+						<i class="four"></i>
+						<dd><h5>瘦脸瘦身</h5></dd>
+						<dd><h6>手动调节细节</h6></dd><dd><h6>轻松拥有小V脸</h6></dd>
+					</dl>
+					<dl class="fivewrap">
+						<i class="five"></i>
+						<dd><h5>高级柔焦</h5></dd>
+						<dd><h6>多款背景虚化效果</h6></dd><dd><h6>让你成为人群中的焦点</h6></dd>
+					</dl>
+					<dl class="sixwrap">
+						<i class="six"></i>
+						<dd><h5>缩小鼻翼</h5></dd>
+						<dd><h6>迷人魅力轻松调</h6></dd><dd><h6>五官立体更集中</h6></dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="threecontent">
+		<div class="navwrap">
+			<h4 class="h4">REVIEWS</h4>
+			<h5 class="h5">双平台一致推荐！</h5>
+			<div class="girls">
+				<ul>
+					<li><img src="images/photo01.jpg" alt="" width="275px"></li>
+					<li class="glis">
+						<h5>01</h5>
+						<h6>美颜相机真强大！界面简单~超容易上手！<br><br><em>Tiffany</em></h6>
+					</li>
+					<li><img src="images/photo02.jpg" alt="" width="275px"></li>
+					<li class="glis">
+						<h5>02</h5>
+						<h6>美颜相机七级美颜真的很强大！<br><br><em>Celia</em></h6>
+					</li>
+					<li class="glis liright">
+						<h5>03</h5>
+						<h6>修得好自然！<br>一秒变女神！<br><br><em>Candy wu</em></h6>
+					</li>
+					<li><img src="images/photo03.jpg" alt="" width="275px"></li>
+					<li class="glis liright">
+						<h5>04</h5>
+						<h6>用了美颜相机就不用别的拍照APP了！<br><br><em>Rosen</em></h6>
+					</li>
+					<li><img src="images/photo04.jpg" alt="" width="275px"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="footerdownload">
+		<div class="navwrap">
+			<h4 class="h4">DOWNLOAD</h4>
+			<h5 class="h5">选择适合你的手机系统<br>立即免费下载</h5>
+			<div class="downimg">
+				<img src="images/download.png" alt="">
+			</div>
+			<div class="load">
+				<div class="ios">
+					<img src="images/downloadios.png" alt=""><br>
+					<i></i>
+				</div>
+				<div class="android">
+					<img src="images/downloadandroid.png" alt=""><br>
+					<i></i>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bottom">
+		<div class="botleft">
+			<i></i>&nbsp;&nbsp;&nbsp;&nbsp;<span>用户协议</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>隐私权政策</span>
+			<p>&copy; 2019厦门鸿天创视科技有限公司版权所有  增值电信业务经营许可证：闽B2-20160104 网络文化经营许可证：闽网文[2016]3677-063号</p>
+		</div>	
+		<div class="botright">
+			TOP
+		</div>
+	</div>
+</body>
+</html>

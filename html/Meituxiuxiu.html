@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>美图秀秀</title>
+	<link rel="stylesheet" href="../css/xiuxiu.css">
+	<script src="../js/jquery-1.11.1.js"></script>
+	<script src="../js/bootstrap.js"></script>
+	<script>
+		window.onload=function(){ 
+        var time;
+        var n=0;
+        var body=document.getElementsByTagName('body')
+        function timer(){
+            	clearInterval(time);
+            	time=setInterval(function(){
+                n++;
+                if(n>2){n=0}
+                body[0].style.backgroundImage='url(../images/bg'+n+'.jpg)'
+            	},3000)
+            }
+        timer()
+        }
+		$(function(){
+			$('.menu').eq(1).hover(function(){
+				$('.arrow').eq(0).css('transform', 'rotate(180deg)');
+				$('.dropdown').eq(0).css('opacity', '1');
+			},function(){
+				$('.arrow').eq(0).css('transform', 'rotate(0deg)');
+				$('.dropdown').eq(0).css('opacity', '0');
+			});
+			$('.menu').eq(2).hover(function(){
+				$('.arrow').eq(1).css('transform', 'rotate(180deg)');
+				$('.dropdown').eq(1).css('opacity', '1');
+			},function(){
+				$('.arrow').eq(1).css('transform', 'rotate(0deg)');
+				$('.dropdown').eq(1).css('opacity', '0');
+			});
+			$('.menu').eq(3).hover(function(){
+				$('.arrow').eq(2).css('transform', 'rotate(180deg)');
+				$('.dropdown').eq(2).css('opacity', '1');
+			},function(){
+				$('.arrow').eq(2).css('transform', 'rotate(0deg)');
+				$('.dropdown').eq(2).css('opacity', '0');
+			});
+			$('.btna').eq(0).hover(function(){
+				$('.load').eq(0).css('display', 'block');
+			},function(){
+				$('.load').eq(0).css('display', 'none');
+			});
+			$('.btna').eq(1).hover(function(){
+				$('.load').eq(1).css('display', 'block');
+			},function(){
+				$('.load').eq(1).css('display', 'none');
+			});
+
+			$('.iconhide .iicon').eq(0).hover(function(){
+				$('.iconhide .iicon').eq(0).css('transform', 'translate(0px,-10px)');
+				$('.smallload').eq(0).css('opacity', '1');
+			}, function() {
+				$('.iconhide .iicon').eq(0).css('transform', 'translate(0px,0px)');
+				$('.smallload').eq(0).css('opacity', '0');
+			});
+			$('.iconhide .iicon').eq(1).hover(function(){
+				$('.iconhide .iicon').eq(1).css('transform', 'translate(0px,-10px)');
+				$('.smallload').eq(1).css('opacity', '1');
+			}, function() {
+				$('.iconhide .iicon').eq(1).css('transform', 'translate(0px,0px)');
+				$('.smallload').eq(1).css('opacity', '0');
+			});
+			$('.iconhide .iicon').eq(2).hover(function(){
+				$('.iconhide .iicon').eq(2).css('transform', 'translate(0px,-10px)');
+				$('.smallload').eq(2).css('opacity', '1');
+			}, function() {
+				$('.iconhide .iicon').eq(2).css('transform', 'translate(0px,0px)');
+				$('.smallload').eq(2).css('opacity', '0');
+			});
+			$('.iconhide .iicon').eq(3).hover(function(){
+				$('.iconhide .iicon').eq(3).css('transform', 'translate(0px,-10px)');
+				$('.smallload').eq(3).css('opacity', '1');
+			}, function() {
+				$('.iconhide .iicon').eq(3).css('transform', 'translate(0px,0px)');
+				$('.smallload').eq(3).css('opacity', '0');
+			});
+		})
+	</script>
+</head>
+<body>
+	<nav class="navbar">
+		<div class="navwrap">
+			<div class="navleft">
+				<a href="homepage.html" target="_blank"><i class="logo"></i></a>
+			</div>
+			<div class="navright">
+			    <div class="menu">
+			    	<a href="homepage.html" target="_blank"><span>美图官网</span></a>
+			    </div>
+				<div class="menu">
+					<span>APP</span>&nbsp;<i class="arrow"></i>
+					<div class="dropdown">
+					    <a class="link" href="../index.html" target="_blank">美颜相机</a><br>
+                        <a class="link" href="homepage.html" target="_blank">了解更多</a>
+					</div>
+				</div>		
+				<div class="menu">
+					<span>智能硬件</span>&nbsp;<i class="arrow"></i>
+					<div class="dropdown">
+						<a class="link" role="button" href="phone.html" target="_blank">美图智能手机</a>
+					</div>
+				</div>
+				<div class="menu">
+					<span>其他</span>&nbsp;<i class="arrow"></i>
+					<div class="dropdown">
+						<a class="link" role="button" href="#" target="_blank">美图秀秀电脑版</a><br>
+					    <a class="link" href="#" target="_blank">美图秀秀网页版</a><br>
+                        <a class="link" href="#" target="_blank">美图艺术家计划</a>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</nav>
+	<div class="content">
+		<div class="navwrap">
+			<div class="conimg1">
+				<img src="../images/logo-xiuxiu-skip.png" alt="">
+			</div>
+			<div class="conimg2">
+				<img src="../images/banner-bigtext.png" alt="">
+			</div>
+		    <div class="download">
+		    	<div class="btn btna">
+		    		<a href="#"><span>App Store</span>&nbsp;&nbsp;<i class="icons"></i></a>
+		    		<div class="load">
+		    			<a href=""><i class="load1"></i></a>
+		    		</div>
+		    	</div>
+		    	<div class="btn btna">
+		    		<a href="#"><span>Android</span>&nbsp;&nbsp;<i class="icons"></i></a>
+		    		<div class="load">
+		    			<a href=""><i class="load2"></i></a>
+		    		</div>
+		    	</div>
+		    	<div class="btn more"><a href="#">更多</a></div>
+		    	<div class="hid"></div>
+		    </div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="navwrap bot">
+			<div class="smalllink">
+				<a href="aboutMeitu.html" target="_blank">关于我们</a>
+				<a href="cooperation.html" target="_blank">联系我们</a>
+				<a href="#" target="_blank">加入我们</a>
+				<a href="#" target="_blank">服务协议</a>
+				<a href="#" class="borderhide" target="_blank">隐私政策</a>
+			</div>
+			<div class="smallicon">
+				<div class="iconhide">
+					<a href="#"><img src="../images/icon-weibo.png" alt="" width="16px" class="iicon"></a>
+					<div class="smallload">
+					    <i class="weibo"></i>
+						<p>点击跳转美图秀秀微博</p>
+					</div>
+				</div>
+				<div class="iconhide">
+					<a href="#"><img src="../images/icon-weixin.png" alt="" width="16px" class="iicon"></a>
+					<div class="smallload">
+						<i class="weixin"></i>
+						<p>扫一扫关注微信公众号</p>
+					</div>
+				</div>
+				<div class="iconhide">
+					<a href="#"><img src="../images/icon-qq.png" alt="" width="12px" class="iicon"></a>
+					<div class="smallload">
+						<i class="qq"></i>
+						<p>扫一扫二维码加我QQ</p>
+					</div>
+				</div>
+				<div class="iconhide">
+					<a href="#"><img src="../images/icon-email.png" alt="" width="13.5px" class="iicon"></a>
+					<div class="smallload email">
+						<p>support@meitu.com</p>
+					</div>
+			    </div>
+			</div>
+			<div class="both"></div>
+		</div>
+		<div class="navwrap state">
+			<div class="staleft">
+				<span>&copy; 2019 厦门鸿天创视科技有限公司</span>
+			</div>
+			<div class="staright">
+				<span><a href="#">增值电信业务经营许可证：B2-20040192&nbsp;&nbsp;&nbsp;</a>
+				<a href="#">网络文化经营许可证：闽网文[2016]3677-063号</a></span>
+			</div>
+		</div>	
+		<div class="container stafo">
+			<p>违法和不良信息举报电话：4000093360（客服在线时间：9:00-21:00）举报邮箱：<a href="#">jubao365@meitu.com</a></p>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>企业荣誉与社会责任</title>
+	<link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
+	<link rel="stylesheet" href="../css/public.css">
+	<link rel="stylesheet" href="../css/honor.css">
+	<script src="../js/jquery-1.11.1.js"></script>
+	<script src="../js/bootstrap.js"></script>
+	<script>
+		$(function(){
+			$('.deputynav .bar a').click(function(){
+				$(this).addClass('botcolor').siblings('a').removeClass('botcolor')
+			})
+			var n=0;
+            var time;
+            function aa(){
+                clearInterval(time);
+                time=setInterval(function(){
+                n++;
+                if(n==3){
+                    $('.onedot li').eq(0).addClass('pink').siblings('li').removeClass('pink')
+                }
+                if(n>3){
+                    $('.one').css('margin-left','0px')
+                    n=1
+                }
+                $('.one').animate({'margin-left': '-363'*n+'px'},500);    
+                $('.onedot li').eq(n).addClass('pink').siblings('li').removeClass('pink')
+                },3000)
+            }
+            aa()
+            $('.onedot li').hover(function(){
+                    clearInterval(time);
+                    $(this).addClass('pink').siblings('li').removeClass('pink')
+                    var n=$(this).index()
+                    $('.one').stop().animate({'margin-left': '-363'*n+'px'},500);
+                },function(){
+                    $(this).removeClass('pink')
+                    aa()
+                })
+            var i=0;
+            var timer;
+            function bb(){
+                clearInterval(timer);
+                timer=setInterval(function(){
+                i++;
+                if(i==3){
+                    $('.twodot li').eq(0).addClass('twopink').siblings('li').removeClass('twopink')
+                }
+                if(i>3){
+                    $('.two').css('margin-left','0px')
+                    i=1
+                }
+                $('.two').animate({'margin-left': '-1100'*i+'px'},500);    
+                $('.twodot li').eq(i).addClass('twopink').siblings('li').removeClass('twopink')
+                },3000)
+            }
+            bb()
+            $('.twodot li').hover(function(){
+                    clearInterval(time);
+                    $(this).addClass('twopink').siblings('li').removeClass('twopink')
+                    var i=$(this).index()
+                    $('.two').stop().animate({'margin-left': '-1100'*i+'px'},500);
+                },function(){
+                    $(this).removeClass('twopink')
+                    bb()
+                })
+		})
+	</script>
+</head>
+<body>
+	<div class="navbar">
+		<div class="container top">
+			<ul>
+				<li><img src="../images/meitu_new.png" alt="" width="180px"></li>
+				<li><a href="homepage.html" title='首页'>首页</a></li>
+				<li><a href="aboutMeitu.html" title='关于美图'>关于美图</a></li>
+				<li><a href="#" title='业务体系'>业务体系</a></li>
+				<li><a href="#" title='投资者关系（IR）'>投资者关系（IR）</a></li>
+				<li><a href="#" title='新闻及媒体资源'>新闻及媒体资源</a></li>
+				<li><a href="cooperation.html" title='联系我们'>联系我们</a></li>
+				<li><a href="#" title='美图招聘'>美图招聘</a></li>
+				<li><a href="#" title='中' class="zhong">中</a><span class="sol"></span><a href="#" title='EN'>EN</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="deputynav">
+		<div class="bar">
+			<a href="aboutMeitu.html" title='公司介绍'>公司介绍</a>
+			<a href="history.html" title='发展历程'>发展历程</a>
+			<a href="leadership.html" title='管理团队'>管理团队</a>
+			<a href="culture.html" title='文化和价值观'>文化和价值观</a>
+			<a href="honor.html" class="botcolor" title='企业荣誉与社会责任'>企业荣誉与社会责任</a>
+		</div>
+	</div>
+	<div class="banner">
+		<div class="content">
+			<div class="honor">
+				<h2>企业荣誉</h2>
+				<ul class="one">
+					<li><img alt="" src="../images/honer01.png"><p>2017-2018年度美图 V6 于美国国际数据库团(IDG)“全球领先品牌 Global Top Brands” 评选荣获年度优秀影像手机奖</p></li>
+					<li><img alt="" src="../images/honer02.png"><p>2017年度美图 T8/T8s 系列手机于中国通信行业发展大会选荣获“2017年产品创新奖”</p></li>
+					<li><img alt="" src="../images/honer03.png"><p>美图秀秀被《时代周刊》评为2017年热门APP之一</p></li>
+					<li><img alt="" src="../images/honer01.png"><p>2017-2018年度美图 V6 于美国国际数据库团(IDG)“全球领先品牌 Global Top Brands” 评选荣获年度优秀影像手机奖</p></li>
+					<li><img alt="" src="../images/honer02.png"><p>2017年度美图 T8/T8s 系列手机于中国通信行业发展大会选荣获“2017年产品创新奖”</p></li>
+					<li><img alt="" src="../images/honer03.png"><p>美图秀秀被《时代周刊》评为2017年热门APP之一</p></li>
+				</ul>
+				<ol class="onedot">
+					<li class="pink"></li>
+					<li></li>
+					<li></li>
+				</ol>
+			</div>
+			<div class="duty">
+				<h2 class="h2">社会责任</h2>
+				<ul class="two">
+					<li>
+						<div class="media">
+							<div class="media-body">
+    							<h2 class="media-heading">美图公司携手李冰冰 “L.O.V.E” 公益品牌为贫困县献爱心</h2>
+					        <p>2018年，美图公司联合李冰冰公益品牌“L.O.V.E——有责任的生活”，通过美图“公益之美”活动，推出线上H5扶贫活动，发动美图用户一起为贫困县奉献爱心，做力所能及的善事，共创美好生活。</p>
+					  		</div>
+  							<div class="media-right">
+      							<img class="media-object" src="../images/honer04.png" alt="...">
+  							</div>
+						</div>
+					</li>
+					<li>
+						<div class="media">
+							<div class="media-body">
+    							<h2 class="media-heading">“美丽中国”慈善晚宴，美图公司拍得Angelababy首幅慈善作品</h2>
+					        <p>2016年4月23日，“美丽中国”2016慈善晚宴在上海顺利举办。美图公司以18万元拍得知名女星Angelababy绘画作品《未来》。本次慈善晚宴共募集善款将全部用于支持“美丽中国”项目，为中国教育资源匮乏地区输送更多优质的教育资源。</p>
+					  		</div>
+  							<div class="media-right">
+      							<img class="media-object" src="../images/honer05.png" alt="...">
+  							</div>
+						</div>
+					</li>
+					<li>
+						<div class="media">
+							<div class="media-body">
+    							<h2 class="media-heading">美图公司助力女性之美 举办“敢想敢变，为爱变美”公益分享会</h2>
+					        <p>2017年12月28日，美图公司联合《时尚健康杂志社》及知名假发品牌瑞贝卡，在北京三里屯举办“敢想敢变，为爱变美”公益分享会。在此次分享会上，美图公司宣布与《时尚健康》达成合作，参与粉红丝带活动，助力女性健康。</p>
+					  		</div>
+  							<div class="media-right">
+      							<img class="media-object" src="../images/honer06.png" alt="...">
+  							</div>
+						</div>
+					</li>
+					<li>
+						<div class="media">
+							<div class="media-body">
+    							<h2 class="media-heading">美图公司携手李冰冰 “L.O.V.E” 公益品牌为贫困县献爱心</h2>
+					        <p>2018年，美图公司联合李冰冰公益品牌“L.O.V.E——有责任的生活”，通过美图“公益之美”活动，推出线上H5扶贫活动，发动美图用户一起为贫困县奉献爱心，做力所能及的善事，共创美好生活。</p>
+					  		</div>
+  							<div class="media-right">
+      							<img class="media-object" src="../images/honer04.png" alt="...">
+  							</div>
+						</div>
+					</li>
+				</ul>
+				<ol class="twodot">
+					<li class="twopink"></li>
+					<li></li>
+					<li></li>
+				</ol>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container boxwrap">
+			<div class='box'>
+				<h4>关于美图</h4>
+				<ul>
+					<li><a href="aboutMeitu.html">公司介绍</a></li>
+					<li><a href="history.html">发展历程</a></li>
+					<li><a href="leadership.html">管理团队</a></li>
+					<li><a href="culture.html">文化和价值观</a></li>
+					<li><a href="honor.html">企业荣誉与社会责任</a></li>
+				</ul>
+			</div>
+			<div class='box'>
+				<h4>业务体系</h4>
+				<a href="#">业务体系</a>
+			</div>
+			<div class='box'>
+				<h4>投资者关系（IR）</h4>
+				<ul>
+					<li><a href="#">公告和通函</a></li>
+					<li><a href="#">业绩与财务报告</a></li>
+					<li><a href="#">IR活动与分析师列表</a></li>
+					<li><a href="#">企业管治</a></li>
+				</ul>
+			</div>
+			<div class='box'>
+				<h4>新闻及媒体资源</h4>
+				<ul>
+					<li><a href="#">新闻发布</a></li>
+					<li><a href="#">媒体资料库</a></li>
+				</ul>
+			</div>
+			<div class='box'>
+				<h4>联系我们</h4>
+				<ul>
+					<li><a href="cooperation.html">商务合作</a></li>
+					<li><a href="#">公司地址</a></li>
+					<li><a href="#">廉政举报</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="bottom">
+		<div class="container">
+			<span>&copy;&nbsp;2019<i></i>&nbsp;&nbsp;<a href="#">增值电信业务经营许可证：B2-20040192</a><a href="#">网络文化经营许可证：闽网文﹝2018﹞8421-380号  隐私政策</a></span>
+	    </div>
+	</div>
+</body>
+</html>

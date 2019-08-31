@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BeautyCam</title>
+	<link rel="stylesheet" href="../css/style-English.css">
+	<script src="../js/jquery-1.11.1.js"></script>
+	<script src="../js/bootstrap.js"></script>
+	<script>
+		$(function(){
+            var time;
+            var n=0;
+			time=setInterval(function(){
+				n++;
+				if(n>3){n=0}
+					$('.photo').children('img').eq(n).css('display', 'block').siblings('img').css('display', 'none');
+			},2500)
+
+			$('.menu').eq(0).hover(function(){
+				$('.arrow').eq(0).css('transform', 'rotate(180deg)');
+				$('.dropdown').eq(0).css('display', 'block');
+			},function(){
+				$('.arrow').eq(0).css('transform', 'rotate(0deg)');
+				$('.dropdown').eq(0).css('display', 'none');
+			});
+			$('.menu').eq(1).hover(function(){
+				$('.arrow').eq(1).css('transform', 'rotate(180deg)');
+				$('.dropdown').eq(1).css('display', 'block');
+			},function(){
+				$('.arrow').eq(1).css('transform', 'rotate(0deg)');
+				$('.dropdown').eq(1).css('display', 'none');
+			});
+			$('.menu').eq(3).hover(function(){
+				$('.arrow').eq(2).css('transform', 'rotate(180deg)');
+				$('.dropdown').eq(2).css('display', 'block');
+			},function(){
+				$('.arrow').eq(2).css('transform', 'rotate(0deg)');
+				$('.dropdown').eq(2).css('display', 'none');
+			});
+
+
+			$('.one').click(function(event){
+				$(this).addClass('color').parent('dl').siblings('dl').children('i').removeClass('color')
+				$('.onewrap dd').addClass('text').parent('dl').siblings('dl').children('dd').removeClass('text')
+				$('.right').find('i').removeClass('color')
+				$('.right').find('dd').removeClass('text')
+				$('.middle video').eq(0).addClass('show').siblings('video').removeClass('show')
+			});
+			$('.two').click(function(event){
+				$(this).addClass('color').parent('dl').siblings('dl').children('i').removeClass('color')
+				$('.twowrap dd').addClass('text').parent('dl').siblings('dl').children('dd').removeClass('text')
+				$('.right').find('i').removeClass('color')
+				$('.right').find('dd').removeClass('text')
+				$('.middle video').eq(1).addClass('show').siblings('video').removeClass('show')
+			})
+			$('.three').click(function(event){
+				$(this).addClass('color').parent('dl').siblings('dl').children('i').removeClass('color')
+				$('.threewrap dd').addClass('text').parent('dl').siblings('dl').children('dd').removeClass('text')
+				$('.right').find('i').removeClass('color')
+				$('.right').find('dd').removeClass('text')
+				$('.middle video').eq(2).addClass('show').siblings('video').removeClass('show')
+			})
+			$('.four').click(function(event){
+				$(this).addClass('color').parent('dl').siblings('dl').children('i').removeClass('color')
+				$('.fourwrap dd').addClass('text').parent('dl').siblings('dl').children('dd').removeClass('text')
+				$('.left').find('i').removeClass('color')
+				$('.left').find('dd').removeClass('text')
+				$('.middle video').eq(3).addClass('show').siblings('video').removeClass('show')
+			})
+			$('.five').click(function(event){
+				$(this).addClass('color').parent('dl').siblings('dl').children('i').removeClass('color')
+				$('.fivewrap dd').addClass('text').parent('dl').siblings('dl').children('dd').removeClass('text')
+				$('.left').find('i').removeClass('color')
+				$('.left').find('dd').removeClass('text')
+				$('.middle video').eq(4).addClass('show').siblings('video').removeClass('show')
+			})
+			$('.six').click(function(event){
+				$(this).addClass('color').parent('dl').siblings('dl').children('i').removeClass('color')
+				$('.sixwrap dd').addClass('text').parent('dl').siblings('dl').children('dd').removeClass('text')
+				$('.left').find('i').removeClass('color')
+				$('.left').find('dd').removeClass('text')
+				$('.middle video').eq(5).addClass('show').siblings('video').removeClass('show')
+			})
+			$('.botright').click(function(){
+            	$('html,body').animate({'scrollTop':0}, 500)
+            });
+            $('.deputynav li').eq(1).click(function(){
+            	var h=$('.banner').offset().top;
+            	$('html,body').animate({'scrollTop':h},500)
+            })
+            $('.deputynav li').eq(2).click(function(){
+            	var h=$('.content').offset().top;
+            	$('html,body').animate({'scrollTop':h},500)
+            })
+            $('.deputynav li').eq(3).click(function(){
+            	var h=$('.twocontent').offset().top;
+            	$('html,body').animate({'scrollTop':h},500)
+            })
+            $('.deputynav li').eq(4).click(function(){
+            	var h=$('.threecontent').offset().top;
+            	$('html,body').animate({'scrollTop':h},500)
+            })
+            $('.deputynav li').eq(5).click(function(){
+            	var h=$('.footerdownload').offset().top;
+            	$('html,body').animate({'scrollTop':h},500)
+            })
+
+            $('.banbtn a').eq(0).click(function(){
+            	var h=$('.twocontent').offset().top;
+            	$('html,body').animate({'scrollTop':h},500)
+            })
+            $('.banbtn a').eq(1).click(function(){
+            	var h=$('.footerdownload').offset().top;
+            	$('html,body').animate({'scrollTop':h},500)
+            })
+		})
+	</script>
+</head>
+<body> 
+	<div class="navbar">
+		<div class="navwrap">
+			<div class="navleft">
+				<a href="homepage.html" target="_blank"><i class="logo"></i></a>
+				<div class="menu">
+					<span>Smart Hardware</span>&nbsp;<i class="arrow"></i>
+					<div class="dropdown">
+						<a class="link"href="phone.html" target="_blank">Meitu Smartphone</a>
+					</div>
+				</div>
+				<div class="menu">
+					<span>App</span>&nbsp;<i class="arrow"></i>
+					<div class="dropdown">
+						<a class="link" href="Meituxiuxiu.html" target="_blank">Meitu</a><br>
+					    <a class="link" href="index.html" target="_blank">BeautyCamera</a><br>
+                        <a class="link" href="homepage.html" target="_blank">Mores</a>
+					</div>
+				</div>	
+				<div class="menu">
+			    	<a href="homepage.html" target="_blank"><span>Corporate Website</span></a>
+			    </div>
+			</div>
+			<div class="navright">
+				<div class="menu">
+					<span>English</span>&nbsp;<i class="arrow"></i>
+					<div class="dropdown">
+						<a class="link" href="../index.html">Chinese</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="deputynav">
+		<div class="navwrap">
+			<ul>
+				<li><img src="../images/enlogo.png" alt="" width="150px"></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">News</a></li>
+				<li><a href="#">Features</a></li>
+				<li><a href="#">Reviews</a></li>
+				<li class="download"><a href="#">Download</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="banner">
+		<div class="banimg">
+			<img src="../images/enlogo2.png" alt="" width="540px">
+			<div class="banbtn">
+				<a href="##">Learn More</a>
+				<a href="##">Download Now</a>
+			</div>
+		</div>
+		<div class="photo">
+			<img src="../images/meiyanbanner01.jpg" alt="">
+			<img src="../images/meiyanbanner02.jpg" alt="">
+			<img src="../images/meiyanbanner03.jpg" alt="">
+			<img src="../images/meiyanbanner04.jpg" alt="">
+		</div>
+		<div class="banphoto"></div>
+	</div>
+	<div class="content">
+		<div class="navwrap">
+			<h4 class="h4">NEWS</h4>
+			<h5 class="h5">PICK UP</h5>
+			<div class="list">
+  				<div class="newlis">
+    				<i></i>
+      				<img src="../images/pic01.jpg" alt="..." width="300px">
+      				<div class="caption">
+        				<h5>BeautyCam Anime PikaPika<br>lovely girl</h5>
+        				<p>2016.12  activity</p>
+      				</div>
+				</div>
+				<div class="newlis">
+      				<img src="../images/pic02.jpg" alt="..." width="300px">
+      				<div class="caption">
+        				<h5>Halloween Carnival<br>Are you an angel or a devil?</h5>
+        				<p>2016.12  activity</p>
+      				</div>
+				</div>
+				<div class="newlis">
+    				<img src="../images/pic03.jpg" alt="..." width="300px">
+      				<div class="caption">
+        				<h5>BeautyCam Anime PikaPika<br>lovely girl</h5>
+        				<p>2016.12  activity</p>
+      				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="twocontent">
+		<div class="navwrap">
+			<h4 class="h4">FEATURES</h4>
+			<h5 class="h5">Six Main Features</h5>
+			<div class="phone">
+				<div class="left">
+					<dl class="onewrap">
+						<i class="one color"></i>
+						<dd class="text"><h5>Instant Beautifying</h5></dd>
+						<dd class="text"><h6>Make your selfies perfect</h6></dd><dd class="text"><h6>Look radiant in one second</h6></dd>
+					</dl>
+					<dl class="twowrap">
+						<i class="two"></i>
+						<dd><h5>Anime PikaPika</h5></dd>
+						<dd><h6>Look adorable in selfies</h6></dd><dd><h6>Become a manga heroine</h6></dd>
+					</dl>
+					<dl class="threewrap">
+						<i class="three"></i>
+						<dd><h5>Video Beautification</h5></dd>
+						<dd><h6>Look perfect in videos</h6></dd>
+					</dl>
+				</div>
+				<div class="middle">
+					<video src="../images/01.webm" autoplay="autoplay" loop="loop" class="show"></video>
+					<video src="../images/02.webm" autoplay="autoplay" loop="loop"></video>
+					<video src="../images/03.webm" autoplay="autoplay" loop="loop"></video>
+					<video src="../images/04.webm" autoplay="autoplay" loop="loop"></video>
+					<video src="../images/05.webm" autoplay="autoplay" loop="loop"></video>
+					<video src="../images/06.webm" autoplay="autoplay" loop="loop"></video>
+				</div>
+				<div class="right">
+					<dl class="fourwrap">
+						<i class="four"></i>
+						<dd><h5>Face and body slimming</h5></dd>
+						<dd><h6>Manually adjust as you want</h6></dd><dd><h6>Shape your own desirable facial contours</h6></dd>
+					</dl>
+					<dl class="fivewrap">
+						<i class="five"></i>
+						<dd><h5>Soft focus</h5></dd>
+						<dd><h6>Numerous background blurry effects</h6></dd><dd><h6>Intelligently recognize your face</h6></dd>
+					</dl>
+					<dl class="sixwrap">
+						<i class="six"></i>
+						<dd><h5>Nose narrowing</h5></dd>
+						<dd><h6>Instantly get a straight nose</h6></dd><dd><h6>Make your facial features</h6></dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="threecontent">
+		<div class="navwrap">
+			<h4 class="h4">REVIEWS</h4>
+			<h5 class="h5">Recommended on both platforms！</h5>
+			<div class="girls">
+				<ul>
+					<li><img src="../images/photo01.jpg" alt="" width="275px"></li>
+					<li class="glis">
+						<h5>01</h5>
+						<h6>BeautyCam is truly great!<br><br>The interface is simple,and super<br><br>easy to use!<br><br><em>Tiffany</em></h6>
+					</li>
+					<li><img src="../images/photo02.jpg" alt="" width="275px"></li>
+					<li class="glis">
+						<h5>02</h5>
+						<h6>BeautyCam's got 7 levels of<br><br>beautification！<br><br>That's really amazing!<br><br><em>Celia</em></h6>
+					</li>
+					<li class="glis liright">
+						<h5>03</h5>
+						<h6>It makes me look like goddess <br><br>in a totallynatural way!<br><br><em>Candy wu</em></h6>
+					</li>
+					<li><img src="../images/photo03.jpg" alt="" width="275px"></li>
+					<li class="glis liright">
+						<h5>04</h5>
+						<h6>With BeautyCam, I no longer<br><br>need anyother selfie apps！<br><br><em>Rosen</em></h6>
+					</li>
+					<li><img src="../images/photo04.jpg" alt="" width="275px"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="footerdownload">
+		<div class="navwrap">
+			<h4 class="h4">DOWNLOAD</h4>
+			<h5 class="h5">Select your mobile phone system<br>Download now for free</h5>
+			<div class="downimg">
+				<img src="../images/download.png" alt="">
+			</div>
+			<div class="load">
+				<div class="ios">
+					<img src="../images/downloadios.png" alt=""><br>
+					<i></i>
+				</div>
+				<div class="android">
+					<img src="../images/downloadandroid.png" alt=""><br>
+					<i></i>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bottom">
+		<div class="botleft">
+			<i></i>&nbsp;&nbsp;&nbsp;&nbsp;<span>Terms of Use</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>Privacy Policy</span>
+			<p>&copy; 2019 Xiamen Hongtian Chuangshi Technology Co.,Ltd.All Rights Reserved. Value-Added Telecommunication Business Operation Permit No.:Min B2-20160104 Internet<br>Culture Business Operation Permit No:Min Wang Wen(2016)No.3677-063</p>
+		</div>	
+		<div class="botright">
+			TOP
+		</div>
+	</div>
+</body>
+</html>

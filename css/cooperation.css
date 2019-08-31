@@ -1,0 +1,45 @@
+.banner{
+	width: 100%;
+}
+.banner .content{
+	width: 1100px;
+	position: relative;
+	left: 50%;
+	margin-left: -550px;
+}
+.banner .content img{
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+.banner .title{
+	padding: 5px 0px;
+	margin: 20px 0px;
+	border-bottom: 1px solid #ccc;
+}
+.banner .title h4{
+	font-family: '微软雅黑';
+	padding: 0px 10px;
+	border-left: 2px solid #e62579;
+}
+.banner .cont{
+	height: 130px;
+}
+.banner .content .more{
+	height: 250px;
+}
+.banner .one dl{
+	width: 350px;
+	height: 110px;
+	margin: 10px 8px;
+	float: left;
+}
+.banner .one dt{
+	font-size: 16px;
+	font-family: '微软雅黑';
+	font-weight: normal;
+	margin: 10px 0px;
+}
+.banner .one dd{
+	color: #999;
+	margin: 5px 0px;
+}

@@ -1,0 +1,149 @@
+.header{
+	width: 100%;
+	background-color: #000;
+	height: 50px;
+}
+.header .container i{
+	width: 200px;
+	height: 50px;
+	background-image: url('../images/phone00.png');
+	background-position: 0px 6px;
+	display: inline-block;
+	background-size: 250%;
+}
+.banner .banwrap{
+	width: 100%;
+	height: 670px;
+	background-position: 50%;
+	background-size: cover;
+}
+.banner .one{
+	background-image: url('../images/phone01.jpg');
+}
+.banner .two{
+	background-image: url('../images/phone02.jpg');
+}
+.banner .three{
+	background-image: url('../images/phone03.jpg');
+}
+.banner .four{
+	background-image: url('../images/phone04.jpg');
+}
+.banner .five{
+	background-image: url('../images/phone05.jpg');
+}
+.banner .six{
+	background-image: url('../images/phone06.jpg');
+}
+.banner .seven{
+	background-image: url('../images/phone07.jpg');
+}
+.banner .eight{
+	background-image: url('../images/phone08.jpg');
+}
+.banner .nine{
+	background-image: url('../images/phone09.jpg');
+}
+.banner .banwrap .text{
+	float: right;
+	margin-right: 200px;
+	margin-top: 200px;
+	margin-bottom: 50px;
+}
+.banner .banwrap .text img{
+	margin-bottom: 50px;
+}
+.banner .banwrap .text .link{
+	color: #fff;
+	font-size: 20px;
+	font-family: '微软雅黑';
+	margin-left: 50px;
+	text-align: center;
+}
+.banner .banwrap .text .aa{
+	color: #f7d7a1;
+}
+.banner .banwrap .text .bb{
+	color: #000;
+}
+.banner .banwrap .text .cc{
+	color: #97520e;
+}
+.banner .banwrap .text .dd{
+	color: #eec698;
+}
+.banner .banwrap .text .ee{
+	color: #ffb240;
+}
+.footer{
+	width: 100%;
+	/* height: 500px; */
+	background-color: #f4f4f4;
+	padding-top: 80px;
+}
+.footer .bottom{
+	border-bottom: 1px solid #ccc;
+}
+.footer ul{
+    float: left;
+    width: 170px;
+    padding: 0px;
+}
+.footer ul li{
+	list-style: none;
+	line-height: 30px;
+	font-size: 12px;
+}
+.footer ul a{
+	color: #666;
+	text-decoration: none;
+}
+.footer ul a:hover{
+	color: #e62579;
+	text-decoration: underline;
+}
+.footer .left{
+	margin: 20px 0px;
+	float: left;
+}
+.footer .left i{
+	width: 90px;
+	height: 20px;
+	background-image: url('../images/phone00.png');
+	background-position: 0px -1288px;
+	display: inline-block;
+	background-size: 400%;
+}
+.footer .left a{
+	font-size: 12px;
+	color: #666;
+	margin: 0px 10px;
+}
+.footer .left a:hover{
+	color: #e62579;
+	text-decoration: underline;
+}
+.footer .left p{
+	font-size: 12px;
+	color: #666;
+	margin: 5px 0px;
+}
+.footer .right{
+	float: right;
+	margin-top:20px;
+}
+.footer .right i{
+	width: 40px;
+	height: 40px;
+	background-image: url('../images/phone00.png');
+	background-position: -598px -6px;
+	display: inline-block;
+}
+.footer .right span{
+	line-height: 40px;
+	font-size: 15px;
+	color: #666;
+	position: relative;
+	top: -10px;
+	left: 0px;
+}

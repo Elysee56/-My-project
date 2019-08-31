@@ -1,0 +1,271 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+html,body{
+	height: 100%;
+	width: 100%;
+	min-width: 1300px;
+}
+body{
+	width: 100%;
+	height: 100%;
+	font-family: '微软雅黑';
+	background-image: url('../images/bg0.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-color: #001926;
+	transition: 2s;
+	
+}
+.navbar{
+	height: 80px;
+	border-bottom: 1px solid #999;
+}
+.navwrap{
+	width: 1200px;
+	margin: 0px auto;
+}
+.navleft{
+	float: left;
+	height: 80px;
+}
+.navright{
+	float: right;
+}
+.navright .menu{
+	width: 120px;
+	height: 80px;
+	float: left;
+	text-align: center;
+	line-height: 80px;
+	font-size: 17px;
+	color: #fff;
+}
+.navright .menu a{
+	color: #fff;
+	text-decoration: none;
+}
+.navleft .logo{
+	width: 142px;
+	height: 30px;
+	margin: 25px 0px;
+	display: inline-block;
+	background-image: url('../images/logo.png');
+	background-position: 0px 0px;
+}
+.navright .menu .dropdown{
+	width: 140px;
+	margin-left: -12px;
+	background-color: #fff;
+	border-radius: 5px;
+	margin-top: -20px;
+	line-height: 40px;
+	opacity: 0;
+	transition: 0.3s;
+}
+.navright .menu .arrow{
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	background-image: url('../images/logo.png');
+	background-position: 105px 23px;
+	transition: 1s;
+}
+.navright .dropdown .link{
+	color: #333;
+	font-size: 13px;
+}
+.navright .dropdown .link:hover{
+	color: red;
+}
+.content .conimg1{
+	width: 230px;
+	height: 50px;
+	margin: 20px;
+}
+.content .conimg1 img{
+	width: 228px;
+}
+.content .conimg2{
+	width: 400px;
+	height: 270px;
+	margin: 0px 20px;
+}
+.content .conimg2 img{
+	width: 398px;
+}
+.content .download{
+	margin-top: 50px;
+	height: 100px;
+}
+.content .download .btn{
+	float: left;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 0px 10px;
+    font-size: 17px;
+    text-align: center;
+    line-height: 45px;
+}
+.content .download .icons{
+	width: 18px;
+	height: 18px;
+	position: relative;
+	top: 3px;
+	display: inline-block;
+	background-image: url('../images/logo.png');
+	background-position: 0px 83px;
+}
+.content .download .btna{
+	width: 155px;
+	height: 45px;
+}
+.content .download .more{
+	width: 60px;
+}
+.content .download a{
+	color: #000;
+	text-decoration: none;
+}
+.content .download a:hover{
+	color: #666;
+}
+.content .download .load{
+	width: 155px;
+	height: 155px;
+	margin-top: 5px;
+	background-color: #fff;
+	border-radius: 5px;
+	display: none;
+}
+.content .download .load1{
+	width: 152px;
+	height: 152px;
+	margin: 2px;
+	display: inline-block;
+	background-image: url('../images/sprite.png');
+	background-position: -174px 153px;
+}
+.content .download .load2{
+	width: 152px;
+	height: 152px;
+	margin: 2px;
+	display: inline-block;
+	background-image: url('../images/sprite.png');
+	background-position: 153px 0px;
+}
+.footer{
+	width: 100%;
+	height: 100px;
+}
+.footer .bot{
+	margin: 20px auto;
+	padding-bottom: 0px;
+}
+.footer .bot .both{
+	clear: both;
+}
+.footer .smalllink{
+	height: 30px;
+	float: left;
+}
+.footer .smalllink a{
+	color: #fff;
+	text-decoration: none;
+    font-size: 12px;
+    margin: 5px;
+    padding-right: 10px;
+    border-right: 1px solid #fff;
+}
+.footer .smalllink .borderhide{
+	border-right: none;
+}
+.footer .smallicon{
+	float: right;
+}
+.footer .smallicon .iconhide{
+	height: 30px;
+}
+.footer .smallicon .smallload{
+	width: 155px;
+	height: 170px;
+	background-color: #fff;
+	border-radius: 5px;
+	float: left;
+	position: relative;
+	top: -210px;
+	left: -72px;
+	opacity: 0;
+	transition: 0.5s;
+}
+.footer .smallicon .email{
+	height: 50px;
+	line-height: 50px;
+	position: relative;
+	top: -85px;
+	left: -75px;
+}
+.footer .smallicon i{
+	width: 140px;
+	height: 140px;
+	margin: 3px;
+	display: inline-block;
+}
+.footer .smallicon p{
+	font-size: 12px;
+	color: #666;
+	text-align: center;
+}
+.footer .smallicon .weibo{
+	background-image: url('../images/sprite.png');
+	background-position: 0px 0px;
+}
+.footer .smallicon .weixin{
+	background-image: url('../images/sprite.png');
+	background-position: -173px 0px;
+}
+.footer .smallicon .qq{
+	background-image: url('../images/sprite.png');
+	background-position: 0px -172px;
+}
+.footer .smallicon .iconhide{
+	width: 50px;
+	float:left;
+}
+.footer .smallicon .iicon{
+	transition: 1s;
+}
+.footer .state{
+    color: #fff;
+    font-size: 12px;
+    height: 30px;
+}
+.footer .state .staleft{
+    float: left;
+}
+.footer .state .staright{
+	float: right;
+}
+.footer .state .staright a{
+	color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+}
+.footer .state .staright a:hover{
+	color: #ddd;
+}
+.footer .stafo{
+	text-align: center;
+}
+.footer .stafo p{
+	color: #fff;
+    font-size: 12px; 
+	text-align: center;
+	margin-bottom: 0px;
+}
+.footer .stafo a{
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+}
